@@ -8,7 +8,7 @@ const [btnBump, setBtnBump] =useState(false);
 const {items} = cartCtx;
 
   useEffect(()=>{
-    if(cartCtx.items.length === 0){
+    if(items.length === 0){
       return;
     }
     setBtnBump(true);
